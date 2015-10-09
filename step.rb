@@ -29,8 +29,8 @@ def select_channel(backup_path)
 			admin: true
 		},
 		{
-			backup_path: "/Library/Frameworks/Mono.framework.app",
-			final_path: "/Library/Frameworks/Mono.framework.app",
+			backup_path: "/Library/Frameworks/Mono.framework",
+			final_path: "/Library/Frameworks/Mono.framework",
 			admin: true
 		},
 		{
