@@ -1,5 +1,7 @@
 #!/bin/bash
 
+THIS_SCRIPTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 if [ -z "$xamarin_backup_path" ]; then
 	echo "xamarin_backup_path not defined"
 	exit 1
@@ -10,4 +12,4 @@ if [ -z "$xamarin_channel" ]; then
 	exit 1
 fi
 
-ruby ./step.rb "$xamarin_backup_path" "$xamarin_channel"
+ruby "${THIS_SCRIPTDIR}/step.rb" "$xamarin_backup_path" "$xamarin_channel"
