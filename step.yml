@@ -1,0 +1,35 @@
+title: "Select Xamarin Channel"
+summary: |-
+  Selects the defined Xamarin channel that you can later use to build your application
+description: |-
+  Selects the defined Xamarin channel that you can later use to build your application
+website: https://github.com/bitrise-io/steps-select-xamarin-channel
+source_code_url: https://github.com/bitrise-io/steps-select-xamarin-channel
+support_url: https://github.com/bitrise-io/steps-select-xamarin-channel/issues
+host_os_tags:
+  - osx-10.10
+project_type_tags:
+  - ios
+  - android
+type_tags:
+  - xamarin
+is_requires_admin_user: false
+is_always_run: false
+is_skippable: false
+inputs:
+  - xamarin_backup_path:
+    opts:
+      title: Backup Xamarin directory
+      description: |
+        Backup directory that holds the different Xamarin channels
+      is_required: true
+      is_expand: true
+  - xamarin_channel: "stable"
+    opts:
+      title: Xamarin channel
+      value_options:
+        - stable
+        - beta
+        - alpha
+      is_required: true
+      is_expand: true
