@@ -56,9 +56,6 @@ def select_channel(backup_path)
 		},
 	]
 
-	# Ensure the License path exists
-	FileUtils.mkdir_p("#{ENV['HOME']}/Library/MonoTouch")
-
 	# Copy Xamarin files
 	directory_mapping.each do |mapping|
 		Dir[mapping[:final_path]].each do |directory|
