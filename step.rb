@@ -80,4 +80,4 @@ if ARGV.count < 2
 end
 
 puts "Switching to #{ARGV[1]}..."
-select_channel(File.join(ARGV[0], "xamarin-#{ARGV[1]}"))
+select_channel(File.join(ARGV[0], "xamarin_#{ARGV[1]}"))
