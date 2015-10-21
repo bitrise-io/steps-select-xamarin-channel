@@ -45,11 +45,6 @@ def select_channel(backup_path)
 			admin: true
 		},
 		# Home
-		# {
-		# 	backup_path: "/Users/Birmacher/Library/MonoTouch",
-		# 	final_path: "#{ENV['HOME']}/Library/MonoTouch",
-		# 	admin: false
-		# },
 		{
 			backup_path: "/Users/Birmacher/Library/Preferences/Xamarin*",
 			final_path: "#{ENV['HOME']}/Library/Preferences/Xamarin*"
